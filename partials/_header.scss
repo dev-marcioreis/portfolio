@@ -1,0 +1,133 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+
+    .container {
+
+        .header__container {
+            padding: 1rem 5rem;
+            justify-content: space-between;
+            transition: $transition;
+
+            .header-logo {
+
+                .logo {
+                    position: relative;
+                    font-family: $font-logo;
+                    font-size: 2rem;
+                    font-weight: 900;
+                    color: $blue2-color;
+                    text-transform: uppercase;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 1rem;
+                        left: 0;
+                        background: $bg-color;
+                        width: 100%;
+                        height: .6rem;
+                        transition: $transition;
+                    }
+                }
+            }
+
+            .header-content {
+                justify-content: space-between;
+                gap: 2rem;
+
+                .header-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background: $glass-color;
+                    border-radius: .5rem;
+                    cursor: pointer;
+                    transition: $transition;
+
+                    &:hover {
+                        border-radius: 50%;
+                    }
+
+                    i {
+                        font-size: 1.5rem;
+                        color: $white-color;
+                        transition: $transition;
+                    }
+
+                    &:hover i {
+                        color: $blue2-color;
+                    }
+                }
+
+                .header-user {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    cursor: pointer;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: .5rem;
+                        transition: $transition;
+
+                        &:hover {
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .header {
+    
+        .container {
+    
+            .header__container {
+                padding: .7rem .5rem;
+    
+                .header-logo {
+    
+                    .logo {
+                        font-size: 1.2rem;
+    
+                        &::before {
+                            top: .7rem;
+                            height: .3rem;
+                        }
+                    }
+                }
+    
+                .header-content {
+                    gap: 1.5rem;
+    
+                    .header-icon {
+                        width: 2rem;
+                        height: 2rem;
+    
+                        i {
+                            font-size: 1.2rem;
+                        }
+                    }
+    
+                    .header-user {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

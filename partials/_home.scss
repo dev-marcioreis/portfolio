@@ -1,0 +1,188 @@
+.home {
+    margin-block-start: 5rem;
+    transition: $transition;
+
+    .container {
+
+        .home__container {
+            justify-content: space-between;
+            align-items: center;
+
+            .home-left {
+                text-align: center;
+                width: 70%;
+                padding: .5rem;
+
+                h2 {
+                    font-family: $font-logo;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    color: $white-color;
+                    text-transform: capitalize;
+                    margin-block-end: 1rem;
+                }
+
+                small {
+                    font-size: 3rem;
+                    color: $red-color;
+                }
+
+                .home-socials {
+                    align-items: center;
+                    justify-content: center;
+                    gap: 3rem;
+
+                    a {
+                        font-size: 1.5rem;
+                        color: $text-color;
+                        transition: $transition;
+
+                        &:hover {
+                            transform: scale(1.2);
+                            color: $blue2-color;
+                        }
+                    }
+
+                }
+
+                .home-btn {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .home-middle {
+                padding: .5rem;
+                width: 100rem;
+                height: auto;
+
+                .circle {
+                    position: absolute;
+                    top: 0;
+                    filter: blur(150px);
+                    border-radius: 50%;
+                    width: 300px;
+                    height: 300px;
+                    opacity: .8;
+                    background: $light-blue;
+                    z-index: -1;
+                }
+
+                img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .home-right {
+                text-align: center;
+                width: 100%;
+                padding: .5rem;
+
+                h2 {
+                    font-family: $font-logo;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    text-transform: capitalize;
+                    color: $white-color;
+                    margin-block-end: 1rem;
+                }
+
+                p {
+                    text-align: justify;
+                    color: $text-color;
+                    line-height: 1.4;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .home {
+    
+        .container {
+    
+            .home__container {
+                flex-direction: column;
+                padding: 0 5rem;
+    
+                .home-middle {
+                    width: 25rem;
+    
+                    .circle {
+                        top: 10rem;
+                        background: $red-color;
+                    }
+                }
+    
+                .home-right {
+    
+                    h2 {
+                        margin-block-start: 1rem;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 768px) {
+    .home {
+    
+        .container {
+    
+            .home__container {
+                flex-direction: column;
+                padding: 0 1rem;
+    
+                .home-left {
+                    width: 100%;
+    
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+    
+                    small {
+                        font-size: 2.5rem;
+                    }
+    
+                    .home-socials {
+                        gap: 1rem;
+    
+                        a {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+    
+                .home-middle {
+                    width: 22rem;
+    
+                    .circle {
+                        top: 15rem;
+                        background: $blue2-color;
+                    }
+                }
+    
+                .home-right {
+    
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

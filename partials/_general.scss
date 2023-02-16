@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+body {
+    background: $bg-color;
+    color: $white-color;
+    height: 300rem;
+
+    &::-webkit-scrollbar{
+        width: .5rem;
+     }
+    
+     &::-webkit-scrollbar-track{
+        background: $bg-color;
+     }
+    
+     &::-webkit-scrollbar-thumb{
+        background: $blue-color;
+     }
+}
+ .section {
+    padding: 2rem 0;
+    overflow: hidden;
+}
+.container {
+    padding: 0 3rem;
+    margin: 0 auto;
+ }
+.headers {
+    text-align: center;
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+ 
+    span {
+       color: $white-color;
+       font-size: .8rem;
+       font-weight: 200;
+       letter-spacing: 2px;
+       text-transform: uppercase;
+       padding: .3rem 0;
+       border-bottom: 3px solid $red-color;
+    }
+ 
+    h3 {
+       color: $white-color;
+       font-size: 1rem;
+       font-weight: 400;
+       margin-block-start: 1rem; 
+       letter-spacing: 1px;
+       text-transform: capitalize;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+p, a, span, small {
+    font-size: 1rem;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    margin-block-start: 2rem;
+    color: $white-color;
+    background: $red-color;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: .4rem .7rem;
+    border-radius: .3rem;
+    box-shadow: $shadow;
+    cursor: pointer;
+    transition: $transition;
+ 
+    &:hover{
+       transform: scale(1.1);
+       border-radius: 5rem;
+    }
+
+ }
+
+
+/*==========Media Query==========*/
+ @media (max-width: 1024px) {
+     .section {
+        padding: 1rem 0;
+    }
+    .container {
+        padding: 0 1rem;
+     }
+     .headers {
+        margin-block-start: 2rem;
+    
+        span {
+            font-size: .7rem;
+        }
+
+        h3 {
+           font-size: .9rem;
+        }
+    }
+    p, a, span, small {
+        font-size: .9rem;
+    }
+    .btn {
+        font-size: .8rem;
+     
+        &:hover{
+           transform: scale(1);
+           border-radius: .3rem;
+        }
+     }
+
+ }
+
+
+
+
+
+

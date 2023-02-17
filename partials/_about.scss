@@ -1,12 +1,11 @@
 .about {
     margin-block-start: 4rem;
-    margin-block-end: 4rem;
 
     .container {
 
         .about__container {
             width: 60%;
-            height: 17rem;
+            height: auto;
             transform: translate(33%);
             background: $bg-color;
             padding: 1rem;
@@ -44,7 +43,6 @@
             .about__container {
                 width: 80%;
                 transform: translate(12%);
-                height: auto;
     
                 article {
     

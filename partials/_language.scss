@@ -8,10 +8,6 @@
             flex-direction: column;
             text-align: center;
 
-            .headers {
-                width: 60%;
-            }
-
             .language-content {
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
@@ -46,10 +42,6 @@
                     }
                 }
             }
-
-            p {
-                color: $text-color
-            }
         }
     }
 }
@@ -62,10 +54,6 @@
         .container {
     
             .language__container {
-
-                .headers {
-                    width: 95%;
-                }
     
                 .language-content {
                     gap: 2rem;

@@ -1,5 +1,5 @@
 .home {
-    margin-block-start: 5rem;
+    margin-block-start: 4rem;
     transition: $transition;
 
     .container {
@@ -58,13 +58,13 @@
 
                 .circle {
                     position: absolute;
-                    top: 0;
+                    top: -10rem;
                     filter: blur(150px);
                     border-radius: 50%;
                     width: 300px;
                     height: 300px;
                     opacity: .8;
-                    background: $light-blue;
+                    background: $blue2-color;
                     z-index: -1;
                 }
 
@@ -112,8 +112,7 @@
                     width: 25rem;
     
                     .circle {
-                        top: 10rem;
-                        background: $red-color;
+                        left: -20rem;
                     }
                 }
     
@@ -169,8 +168,7 @@
                     width: 22rem;
     
                     .circle {
-                        top: 15rem;
-                        background: $blue2-color;
+                        left: -15rem;
                     }
                 }
     

@@ -1,0 +1,14 @@
+const scrollPage = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+})
+
+scrollPage.reveal(`.home-middle`)
+scrollPage.reveal(`.home-left`, {delay: 500, origin: 'left'})
+scrollPage.reveal(`.home-right`, {delay: 500, origin: 'right'})
+scrollPage.reveal(`.language`, {delay: 300, origin: 'bottom'})
+scrollPage.reveal(`.about`, {interval: 500, origin: 'top'})
+scrollPage.reveal(`.portfolio`, {delay: 400, origin: 'right'})
+scrollPage.reveal(`.footer`, {delay: 100, origin: 'bottom'})

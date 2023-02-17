@@ -65,6 +65,10 @@
                         }
                     }
                 }
+
+                p {
+                    margin-block-start: 2rem;
+                }
             }
         }
     }
@@ -82,7 +86,11 @@
     
                 .language-content {
                     grid-template-columns: repeat(3, 1fr);
-                    gap: 1.5rem;
+                    gap: 1rem;
+
+                    .box {
+                        margin-block-end: .5rem;
+                    }
                 }
             }
         }

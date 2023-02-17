@@ -1,5 +1,6 @@
 .language {
     transition: $transition;
+    margin-bottom: 10rem;
 
     .container {
 
@@ -14,14 +15,15 @@
             .language-content {
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
-                gap: 3.5rem;
+                gap: 4rem;
+                transition: $transition;
 
                 .box {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 7rem;
-                    height: 7rem;
+                    width: 3.5rem;
+                    height: 3.5rem;
                     border-radius: .5rem;
                     background: $bg-color;
                     backdrop-filter: blur(5px);
@@ -29,16 +31,16 @@
                     transition: $transition;
 
                     &:hover {
-                        transform: scale(1.1) rotate(10deg);
+                        transform: scale(1.2);
                     }
 
                     i, ion-icon {
-                        font-size: 5rem;
+                        font-size: 2rem;
                         color: $blue5-color;
                     }
 
                     img {
-                        width: 5rem;
+                        width: 2rem;
                         color: $blue4-color;
                     }
                 }
@@ -61,12 +63,9 @@
                 }
     
                 .language-content {
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 3rem;
+                    gap: 2rem;
     
                     .box {
-                        width: 10rem;
-                        height: 10rem;
     
                         &:hover {
                             transform: scale(1) rotate(0);
@@ -89,13 +88,8 @@
             .language__container {
     
                 .language-content {
-                    grid-template-columns: 1fr 1fr;
-                    gap: 2.5rem;
-    
-                    .box {
-                        width: 7rem;
-                        height: 7rem;
-                    }
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1.5rem;
                 }
             }
         }

@@ -1,0 +1,104 @@
+.language {
+    transition: $transition;
+
+    .container {
+
+        .language__container {
+            justify-content: center;
+            flex-direction: column;
+
+            .headers {
+                width: 60%;
+            }
+
+            .language-content {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 3.5rem;
+
+                .box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: .5rem;
+                    background: $bg-color;
+                    backdrop-filter: blur(5px);
+                    box-shadow: $shadow3;
+                    transition: $transition;
+
+                    &:hover {
+                        transform: scale(1.1) rotate(10deg);
+                    }
+
+                    i, ion-icon {
+                        font-size: 5rem;
+                        color: $blue5-color;
+                    }
+
+                    img {
+                        width: 5rem;
+                        color: $blue4-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .language {
+    
+        .container {
+    
+            .language__container {
+
+                .headers {
+                    width: 95%;
+                }
+    
+                .language-content {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 3rem;
+    
+                    .box {
+                        width: 10rem;
+                        height: 10rem;
+    
+                        &:hover {
+                            transform: scale(1) rotate(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 768px) {
+    .language {
+    
+        .container {
+    
+            .language__container {
+    
+                .language-content {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2.5rem;
+    
+                    .box {
+                        width: 7rem;
+                        height: 7rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

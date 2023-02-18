@@ -19,7 +19,7 @@
                 .logo {
                     position: relative;
                     font-family: $font-logo;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: 900;
                     color: $blue2-color;
                     text-transform: uppercase;
@@ -27,11 +27,11 @@
                     &::before {
                         content: '';
                         position: absolute;
-                        top: 1rem;
+                        top: .8rem;
                         left: 0;
                         background: $blue-color;
                         width: 100%;
-                        height: .6rem;
+                        height: .4rem;
                         transition: $transition;
                     }
                 }
@@ -45,8 +45,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 2.5rem;
-                    height: 2.5rem;
+                    width: 2rem;
+                    height: 2rem;
                     background: $glass-color;
                     border-radius: .5rem;
                     cursor: pointer;
@@ -57,7 +57,7 @@
                     }
 
                     i {
-                        font-size: 1.5rem;
+                        font-size: 1rem;
                         color: $white-color;
                         transition: $transition;
                     }
@@ -68,8 +68,8 @@
                 }
 
                 .header-user {
-                    width: 2.5rem;
-                    height: 2.5rem;
+                    width: 2rem;
+                    height: 2rem;
                     cursor: pointer;
 
                     img {
@@ -102,10 +102,10 @@
                 .header-logo {
     
                     .logo {
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
     
                         &::before {
-                            top: .7rem;
+                            top: .6rem;
                             height: .3rem;
                         }
                     }
@@ -115,17 +115,17 @@
                     gap: 1.5rem;
     
                     .header-icon {
-                        width: 2rem;
-                        height: 2rem;
+                        width: 1.5rem;
+                        height: 1.5rem;
     
                         i {
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                         }
                     }
     
                     .header-user {
-                        width: 2rem;
-                        height: 2rem;
+                        width: 1.5rem;
+                        height: 1.5rem;
                     }
                 }
             }

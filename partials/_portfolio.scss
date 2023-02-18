@@ -1,4 +1,5 @@
 .portfolio {
+    padding: 0 4rem;
 
     .container {
 
@@ -49,19 +50,54 @@
         
                     .portfolio-btn {
                         position: absolute;
-                        top: 30%;
-                        right: 32%;
+                        top: 25%;
+                        right: 0;
+                        left: 0;
                         display: flex;
                         align-items: baseline;
                         justify-content: center;
                         gap: 1rem;
                         opacity: 0;
                         transition: all 2s ease;
+
+                        h4 {
+                            color: $white-color;
+                            font-weight: 100;
+                            letter-spacing: 2px;
+                        }
                     }
                 }
             }
         }
     }
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .portfolio {
+        padding: 0 1rem;
+
+        .container {
+    
+            .portfolio__container {
+    
+                .portfolio-box {
+                    gap: 1rem;
+    
+                    article {
+                        margin-block-end: 1rem;
+            
+                        .portfolio-btn {
+                            top: 30%;
+                            right: 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 

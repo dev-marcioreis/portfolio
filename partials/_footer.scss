@@ -1,0 +1,176 @@
+.footer {
+    box-shadow: $shadow4;
+    margin-block-start: 10rem;
+    padding: 4rem 0;
+
+    .container {
+
+        .footer__container {
+            justify-content: space-around;
+            align-items: center;
+
+            .footer-logo {
+
+                .logo {
+                    position: relative;
+                    font-family: $font-logo;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    color: $blue2-color;
+                    text-transform: uppercase;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: .8rem;
+                        left: 0;
+                        background: $blue-color;
+                        width: 100%;
+                        height: .4rem;
+                        transition: $transition;
+                    }
+                }
+            }
+
+            .footer-info {
+                
+                h4 {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    line-height: 2;
+                    margin-block-end: .7rem;
+                    border-bottom: 3px solid $red-color;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    p {
+                        color: $white-color;
+                        font-weight: 100;
+
+                        a {
+                            text-transform: capitalize;
+                            color: $blue2-color;
+                            font-weight: 300;
+                            transition: $transition;
+
+                            &:hover {
+                                color: $red-color;
+                            }
+                        }
+                    }
+
+                    span {
+                        color: $white-color;
+                        font-weight: 100;
+
+                        i {
+                            color: $blue2-color;
+                        }
+                    }
+                }
+            }
+
+            .footer-contact {
+                
+                h4 {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    line-height: 2;
+                    margin-block-end: .7rem;
+                    border-bottom: 3px solid $red-color;
+                }
+
+                div {
+                    display: flex;
+                    gap: 2rem;
+                    margin-block-start: 1rem;
+
+                    a {
+                        font-size: 1.5rem;
+                        color: $blue2-color;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $red-color;
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .footer {
+        text-align: center;
+    
+        .container {
+    
+            .footer__container {
+                flex-direction: column;
+                gap: 3rem;
+    
+                .footer-logo {
+    
+                    .logo {
+                        font-size: 1.1rem;
+    
+                        &::before {
+                            top: .6rem;
+                            height: .3rem;
+                        }
+                    }
+                }
+    
+                .footer-info {
+                    
+                    h4 {
+                        font-size: .9rem;
+                    }
+    
+                    div {
+    
+                        p {
+                            font-size: .9rem;
+    
+                            a {
+                                font-size: .8;
+                            }
+                        }
+    
+                        span {
+                            font-size: .9rem;
+    
+                        }
+                    }
+                }
+    
+                .footer-contact {
+                    
+                    h4 {
+                        font-size: .9rem;
+                    }
+    
+                    div {
+                        gap: 3rem;
+    
+                        a {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

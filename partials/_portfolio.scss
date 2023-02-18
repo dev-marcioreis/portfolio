@@ -9,7 +9,7 @@
             .portfolio-box {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2rem;
+                gap: 1.5rem;
                 place-items: center;
 
                 article {
@@ -67,6 +67,21 @@
                     }
                 }
             }
+
+            .portfolio-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-block-start: 2rem;
+
+                a {
+                    color: $text-color;
+
+                    span {
+                        color: $blue2-color;
+                    }
+                }
+            }
         }
     }
 }
@@ -85,6 +100,17 @@
                     gap: 1rem;
     
                     article {
+
+                        &:hover {
+    
+                            .portfolio-btn {
+                                opacity: 0;
+                            }
+            
+                            .portfolio-image::before {
+                                display: none;
+                            }
+                        }
 
                         .portfolio-btn {
                             top: 4rem;

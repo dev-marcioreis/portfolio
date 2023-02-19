@@ -21,7 +21,6 @@
                     margin-block-end: 2rem;
         
                     &:hover {
-                        box-shadow: $shadow4;
 
                         .portfolio-btn {
                             opacity: 1;
@@ -67,10 +66,17 @@
                         justify-content: center;
                         opacity: 0;
                         transition: all 2s ease;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 3rem;
+                        text-align: center;
 
                         .btn {
                             border-radius: 5rem;
-                            background: $blue3-color;
+                            width: 100%;
+                            border-radius: .5rem;
+                            text-transform: uppercase;
                         }
                     }
                 }

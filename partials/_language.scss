@@ -15,30 +15,35 @@
                 transition: $transition;
 
                 .box {
+                    position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 3.5rem;
-                    height: 3.5rem;
-                    border-radius: .5rem;
+                    width: 4rem;
+                    height: 4rem;
                     background: $blue-color;
-                    backdrop-filter: blur(5px);
-                    box-shadow: $shadow3;
+                    border: 2px solid $blue-color;
+                    border-radius: .5rem;
+                    box-shadow: inset 0 4px 10px $black-color,
+                                0 5px 5px $black-color,
+                                0 1px 5px $glass-color;
                     margin-block-end: 3rem;
                     transition: $transition;
 
                     &:hover {
-                        transform: scale(1.2);
+                        box-shadow: inset 0 4px 10px $glass-color,
+                                0 5px 5px $black-color,
+                                0 1px 5px $glass-color;  
+                        transform: scale(1.1);          
                     }
-
+    
                     i, ion-icon {
                         font-size: 2rem;
                         color: $blue5-color;
                     }
-
+    
                     img {
                         width: 2rem;
-                        color: $blue4-color;
                     }
                 }
             }
@@ -86,7 +91,6 @@
     
                 .language-content {
                     grid-template-columns: repeat(3, 1fr);
-                    gap: 1rem;
 
                     .box {
                         margin-block-end: .5rem;

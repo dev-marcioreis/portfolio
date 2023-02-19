@@ -7,20 +7,21 @@
             width: 60%;
             height: auto;
             transform: translate(33%);
-            background: $text-color;
+            background: $blue-color;
             padding: 2rem 1rem 1rem;
             border: 1px solid $black-color;
-            box-shadow: -1rem .8rem $black-color;
+            box-shadow: inset -10px 10px 10px $glass-color,
+                                -15px 15px 5px $black-color,
+                                0 1px 5px $glass-color;
             transition: $transition;
 
             article {
-                color: $text-color;
                 text-align: center;
 
                 p {
                     margin-block-end: 1rem;
-                    color: $black-color;
-                    font-weight: 300;
+                    color: $white-color;
+                    font-weight: 100;
                 }
             }
         }

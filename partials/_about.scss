@@ -4,24 +4,30 @@
     .container {
 
         .about__container {
-            width: 60%;
-            height: auto;
-            transform: translate(33%);
-            background: $blue-color;
-            padding: 2rem 1rem 1rem;
-            border: 1px solid $black-color;
-            box-shadow: inset -10px 10px 10px $glass-color,
-                                -15px 15px 5px $black-color,
-                                0 1px 5px $glass-color;
-            transition: $transition;
+            justify-content: center;
+            margin-block-end: 3rem;
+            padding: 0 7rem;
+            text-align: center;
 
             article {
-                text-align: center;
+                position: relative;
 
-                p {
-                    margin-block-end: 1rem;
-                    color: $white-color;
-                    font-weight: 100;
+                .card {
+                    position: relative;
+                    background: $transparent-color;
+                    width: auto;
+                    min-height: auto;
+                    border-radius: 1rem;
+                    box-shadow: inset -10px 10px 10px hsla(0, 0%, 100%, 0.05),
+                                0 25px 45px rgba(0, 0, 0, 0.473),
+                                0 1px 5px hsla(0, 0%, 100%, 0.1);
+                    padding: 3rem;
+
+                    p {
+                        margin-block-end: 1rem;
+                        color: $white-color;
+                        font-weight: 100;
+                    }
                 }
             }
         }
@@ -36,8 +42,16 @@
         .container {
     
             .about__container {
-                width: 80%;
-                transform: translate(12%);
+                padding: 0 5rem;
+                text-align: left;
+
+                article {
+
+                    .card {
+                        padding: 2rem 2rem .7rem 2rem;
+                    }
+
+                }
             }
         }
     }
@@ -51,8 +65,15 @@
         .container {
     
             .about__container {
-                width: 90%;
-                transform: translate(6%);
+                padding: 0 1rem;
+
+                article {
+
+                    .card {
+                        padding: 1.5rem 1.5rem .4rem 1.5rem;
+                    }
+
+                }
             }
         }
     }

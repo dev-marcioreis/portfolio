@@ -1,6 +1,6 @@
 # Portfolio (SASS)
 Estou iniciando o desenvolvimento de meu portfólio em HTML, SASS e JavaScript.<br>
 Link de acesso: https://dev-marcioreis.github.io/portfolio/
-![image](https://user-images.githubusercontent.com/122680054/220141505-24d9121d-2610-41a9-9336-cff71b1c2d83.png)
-![image](https://user-images.githubusercontent.com/122680054/220141614-fecaeb42-0f30-44bd-8ca7-53d5f26b8f3f.png)
+![image](https://user-images.githubusercontent.com/122680054/220144719-06e3371e-3b85-4ba1-ab5d-43527191201b.png)
+![image](https://user-images.githubusercontent.com/122680054/220144772-12763fa5-a029-4e62-9220-9dd0e8d6a6d8.png)
 

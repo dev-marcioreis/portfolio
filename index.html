@@ -29,36 +29,20 @@
                 <div class="header-logo">
                     <a href="index.html" class="logo">portfólio</a>
                 </div>
-                <div class="header-content flex">
-                    <div class="header-icon" id="cardbtn">
-                        <i class="uil uil-comment"></i>
-
-                        <!--========Messege========-->
-                        <div class="messege">
-                            <div class="messege-card flex">
-                                <div class="card-info-whatsapp">
-                                    <div class="icon-wrapper">
-                                        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511994341245" target="_blank">
-                                            <i class="uil uil-whatsapp"></i>
-                                            <span>whatsapp</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-info-telegram">
-                                    <div class="icon-wrapper">
-                                        <a href="https://t.me/devmarcioreis" target="_blank">
-                                            <i class="uil uil-telegram-alt"></i>
-                                            <span>telegram</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                <div class="header-navigation">
+                   <span class="menu-btn flex"></span>
+                   <ul class="header-menu flex">
+                    <div class="box-image flex">
+                        <img src="assets/user.jfif" alt="Profile img">
+                        <span>márcio</span>
                     </div>
-                    <div class="header-user">
-                        <img src="assets/user.jfif" alt="">
-                    </div>
+                     <li class="menu-link"><a href="#home"><i class="uil uil-estate"></i> início</a></li>
+                     <li class="menu-link"><a href="#language"><i class="uil uil-robot"></i> tecnologias</a></li>
+                     <li class="menu-link"><a href="#about"><i class="uil uil-user"></i> sobre min</a></li>
+                     <li class="menu-link"><a href="#portfolio"><i class="uil uil-bag"></i> portfólio</a></li>
+                     <li class="menu-link"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511994341245" target="_blank"><i class="uil uil-whatsapp"></i> whatsapp</a></li>
+                    <li class="menu-link"><a href="https://t.me/devmarcioreis" target="_blank"><i class="uil uil-telegram-alt"></i> telegram</a></li>
+                   </ul>
                 </div>
             </div>
         </div>
@@ -67,7 +51,7 @@
     <main>
 
         <!--========Home========-->
-        <section class="section home">
+        <section class="section home" id="home">
             <div class="container">
                 <div class="home__container flex">
                     <div class="home-left">
@@ -93,7 +77,7 @@
         </section>
 
         <!--========Language========-->
-        <section class="section language">
+        <section class="section language" id="language">
             <div class="container">
                 <div class="language__container flex">
                     <div class="headers">
@@ -125,7 +109,7 @@
         </section>
 
         <!--========About========-->
-        <section class="section about">
+        <section class="section about" id="about">
             <div class="container">
                 <div class="about__container flex">
                     <article>
@@ -140,7 +124,7 @@
         </section>
 
         <!--========Portfólio========-->
-        <section class="section portfolio">
+        <section class="section portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio__container">
                     <div class="headers">

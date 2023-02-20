@@ -1,3 +1,10 @@
+const menuToggle = document.querySelector('.menu-btn')
+const navigation = document.querySelector('.header-navigation')
+
+menuToggle.addEventListener('click',  () => {
+    navigation.classList.toggle('active')
+})
+
 const scrollPage = ScrollReveal({
     origin: 'top',
     distance: '60px',

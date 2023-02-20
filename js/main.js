@@ -1,9 +1,31 @@
-const menuToggle = document.querySelector('.menu-btn')
+const menuOpen = document.querySelector('.menu-open')
+const menuClose = document.querySelector('.menu-close')
 const navigation = document.querySelector('.header-navigation')
 
-menuToggle.addEventListener('click',  () => {
-    navigation.classList.toggle('active')
+menuOpen.addEventListener('click', () => {
+    navigation.classList.add('active')
+    menuOpen.style.display = 'none'
+    menuClose.style.display = 'block'
 })
+
+const closeNavigation = () => {
+    navigation.classList.remove('active')
+    menuClose.style.display = 'none'
+    menuOpen.style.display = 'block'
+}
+
+menuClose.addEventListener('click', closeNavigation)
+
+
+if(window.innerWidth > 100) {
+    document.querySelectorAll('.header-menu .menu-link').forEach(headerNavigation => {
+        headerNavigation.addEventListener('click', () => {
+            closeNavigation()
+        })
+    })
+}
+
+
 
 const scrollPage = ScrollReveal({
     origin: 'top',

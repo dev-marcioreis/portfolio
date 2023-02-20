@@ -47,35 +47,21 @@
                 overflow: hidden;
                 transition: $transition;
 
-                .menu-btn {
+                .menu-open, .menu-close {
                     position: absolute;
                     top: 0;
                     right: .2rem;
                     width: 2.2rem;
                     height: 2.2rem;
-                    justify-content: center;
                     cursor: pointer;
 
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        width: 22px;
-                        height: 2px;
-                        background: $white-color;
-                        transform: translateY(-10px);
-                        box-shadow: 0 10px $white-color;
-                        transition: $transition;
+                    i {
+                        font-size: 1.7rem;
                     }
+                }
 
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        width: 22px;
-                        height: 2px;
-                        background: $white-color;
-                        transform: translateY(10px);
-                        transition: $transition;
-                    }
+                .menu-close {
+                    display: none;
                 }
 
                 &.active {

@@ -1,17 +1,21 @@
 .home {
     margin-block-start: 4rem;
+    padding: 1rem 0;
     transition: $transition;
 
     .container {
+        padding: 0 1rem;
 
         .home__container {
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            margin-block-start: 6rem;
 
             .home-left {
                 text-align: center;
                 width: 70%;
                 padding: .5rem;
+                margin-block-start: 5rem;
 
                 h2 {
                     font-family: $font-logo;
@@ -52,27 +56,43 @@
             }
 
             .home-middle {
-                padding: .5rem;
-                width: 100rem;
-                height: auto;
 
                 .circle {
                     position: absolute;
-                    top: -15rem;
-                    left: 9rem;
-                    filter: blur(150px);
+                    top: 7rem;
+                    left: 12rem;
+                    filter: blur(100px);
+                    width: 150px;
+                    height: 150px;
                     border-radius: 50%;
-                    width: 250px;
-                    height: 250px;
                     opacity: .8;
                     background: $blue2-color;
-                    z-index: -1;
+                    z-index: -2;
                 }
 
-                img {
-                    object-fit: contain;
-                    width: 100%;
-                    height: 100%;
+                .home-image {
+                    position: relative;
+                    width: 35rem;
+                    height: 23.3rem;
+                    margin-block-end: 7rem;
+                    z-index: 1;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        background: $black-color;
+                        filter: blur(100px);
+                        clip-path: circle(50% at 50% 50%);
+                        width: 20rem;
+                        transform-origin: bottom;
+                        margin: 0 0 -2.5rem 6.2rem;
+                        z-index: -1;
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
                 }
             }
 
@@ -80,6 +100,7 @@
                 text-align: center;
                 width: 65%;
                 padding: .5rem;
+                margin-block-start: 5rem;
 
                 h2 {
                     font-family: $font-logo;
@@ -91,7 +112,7 @@
                 }
 
                 p {
-                    text-align: justify;
+                    text-align: center;
                 }
             }
         }
@@ -102,36 +123,58 @@
 /*==========Media Query==========*/
 @media (max-width: 1024px) {
     .home {
-        margin-block-start: 3rem;
+        margin-block-start: 0;
     
         .container {
     
             .home__container {
+                align-items: center;
                 flex-direction: column;
-                padding: 0 5rem;
+                margin-block-start: 1rem;
+    
+                .home-left {
+                    width: 100%;
+                    margin-block-start: 3rem;
+    
+                    h2 {
+                        font-size: 1.7rem;
+                    }
+    
+                    small {
+                        font-size: 1.7rem;
+                    }
+    
+                    .home-socials {
+                        gap: 2rem;
+    
+                        a {
+                            font-size: 1rem;
+                        }
+    
+                    }
+    
+                    .home-btn {
+                        margin-block-end: 1rem;
+                    }
+                }
     
                 .home-middle {
-                    width: 35rem;
-                    margin-block-end: 0rem;
-
-                    .circle {
-                        top: 4rem;
-                        left: 8rem;
-                        filter: blur(70px);
-                        width: 280px;
-                        height: 280px;
+    
+                    .home-image {
+                        margin-block-end: 0;
+    
+                        &::after {
+                            margin: 0 0 -2.5rem 7.2rem;
+                        }
                     }
                 }
     
                 .home-right {
                     width: 100%;
+                    margin-block-start: 3rem;
     
                     h2 {
-                        margin-block-start: 1rem;
-                    }
-
-                    p {
-                        text-align: center;
+                        font-size: 1.7rem;
                     }
                 }
             }
@@ -144,55 +187,37 @@
 /*==========Media Query==========*/
 @media (max-width: 768px) {
     .home {
+        margin-block-start: 1rem;
     
         .container {
     
             .home__container {
-                flex-direction: column;
-                padding: 0 1rem;
+                margin-block-start: 0;
     
-                .home-left {
-                    width: 100%;
+                .home-middle {
     
-                    h2 {
-                        font-size: 1.7rem;
+                    .circle {
+                        top: 7rem;
+                        left: 10rem;
                     }
     
-                    small {
-                        font-size: 1.7rem;
-                    }
+                    .home-image {
+                        width: 29rem;
     
-                    .home-socials {
-                        gap: .9rem;
-    
-                        a {
-                            font-size: 1rem;
+                        &::after {
+                            top: -3rem;
+                            left: 4rem;
+                            width: 10rem;
+                            margin: 0 0 -2.5rem 5.5rem;
                         }
                     }
                 }
-    
-                .home-middle {
-                    width: 27rem;
 
-                    .circle {
-                        top: 1rem;
-                        left: 20rem;
-                        width: 150px;
-                        height: 150px;
-                    }
-                }
-    
                 .home-right {
-    
-                    h2 {
-                        font-size: 1.7rem;
-                    }
-
-                    p {
-                        font-size: .8rem;
-                    }
+                    margin-block-start: 1rem;
                 }
             }
         }
     }
+
 }

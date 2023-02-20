@@ -118,6 +118,7 @@
 
                         a {
                             color: $white-color;
+                            text-transform: capitalize;
                         }
 
                         &:hover {
@@ -187,6 +188,10 @@
                         &::after {
                             width: 20px;
                         }
+                    }
+
+                    &.active {
+                        width: 10rem;
                     }
                 }
             }

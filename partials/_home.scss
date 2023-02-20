@@ -5,7 +5,7 @@
     .container {
 
         .home__container {
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
 
             .home-left {
@@ -15,7 +15,7 @@
 
                 h2 {
                     font-family: $font-logo;
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: 900;
                     color: $white-color;
                     text-transform: capitalize;
@@ -58,11 +58,12 @@
 
                 .circle {
                     position: absolute;
-                    top: -10rem;
+                    top: -15rem;
+                    left: 9rem;
                     filter: blur(150px);
                     border-radius: 50%;
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                     opacity: .8;
                     background: $blue2-color;
                     z-index: -1;
@@ -77,12 +78,12 @@
 
             .home-right {
                 text-align: center;
-                width: 100%;
+                width: 65%;
                 padding: .5rem;
 
                 h2 {
                     font-family: $font-logo;
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: 900;
                     text-transform: capitalize;
                     color: $white-color;
@@ -110,15 +111,20 @@
                 padding: 0 5rem;
     
                 .home-middle {
-                    width: 25rem;
-    
+                    width: 35rem;
+                    margin-block-end: 0rem;
+
                     .circle {
-                        left: -20rem;
+                        top: 4rem;
+                        left: 8rem;
+                        filter: blur(70px);
+                        width: 280px;
+                        height: 280px;
                     }
                 }
     
                 .home-right {
-                    width: 112%;
+                    width: 100%;
     
                     h2 {
                         margin-block-start: 1rem;
@@ -149,34 +155,39 @@
                     width: 100%;
     
                     h2 {
-                        font-size: 2.5rem;
+                        font-size: 1.7rem;
                     }
     
                     small {
-                        font-size: 2.5rem;
+                        font-size: 1.7rem;
                     }
     
                     .home-socials {
-                        gap: 1rem;
+                        gap: .9rem;
     
                         a {
-                            font-size: 1.3rem;
+                            font-size: 1rem;
                         }
                     }
                 }
     
                 .home-middle {
-                    width: 22rem;
-    
+                    width: 27rem;
+
                     .circle {
-                        left: -15rem;
+                        top: 2rem;
+                        left: 5.5rem;
                     }
                 }
     
                 .home-right {
     
                     h2 {
-                        font-size: 2.5rem;
+                        font-size: 1.7rem;
+                    }
+
+                    p {
+                        font-size: .8rem;
                     }
                 }
             }
